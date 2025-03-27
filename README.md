@@ -104,29 +104,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Note: This application is for demonstration purposes only. The generated consultancy documents should be reviewed by qualified legal professionals before use in any real-world business context. The developers are not responsible for any legal consequences resulting from the use of these documents.
 
 Happy Document Generating! 🎉
-For support or contributions, please open an issue in our repository.
-
-Copy
-
-### Key Markdown Elements Used:
-
-1. **Headers**: `#`, `##`, `###` for different section levels
-2. **Lists**: `-` for unordered lists, indented with spaces for nested items
-3. **Tables**: Created with `|` and `-` characters
-4. **Code Blocks**: Wrapped in triple backticks (```) with optional language specification
-5. **Images**: `![alt text](image-url)`
-6. **Emphasis**: `**bold**`, `*italic*`
-7. **Blockquotes**: `>` for the disclaimer
-8. **Horizontal Rule**: `---`
-9. **Emojis**: Added with Unicode characters
-10. **File Structure**: Preformatted with triple backticks
-
-To use this README:
-1. Create a new file named `README.md` in your project root
-2. Paste this entire content
-3. Replace placeholder URLs with actual images
-4. Update any project-specific details as needed
-5. Save the file
-
-The Markdown will render beautifully on GitHub and other Markdown-compatible platforms.
-New chat

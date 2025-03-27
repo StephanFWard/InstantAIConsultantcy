@@ -91,7 +91,7 @@ def create_checkout_session():
                             'name': f'AI Consultancy: {CONSULTANCY_TYPES.get(form_data.get("consultancy_type", ""), "Custom Consultation")}',
                             'description': 'AI-powered business consultation tailored to your needs',
                         },
-                        'unit_amount': 9900,  # $99.00 in cents
+                        'unit_amount': 19.99,  # $19.99 in cents
                     },
                     'quantity': 1,
                 },

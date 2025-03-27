@@ -255,8 +255,8 @@
             transform: translateY(0);
         }
         
-        /* Special Offer Timer Styles */
-        .special-offer-timer {
+        /* Special Offer Styles */
+        .special-offer {
             background-color: #fff9f0;
             border-radius: 8px;
             padding: 15px;
@@ -265,54 +265,11 @@
             border: 1px solid #ffe0b2;
         }
         
-        .special-offer-timer .timer-label {
+        .special-offer .offer-label {
             font-weight: 600;
             color: #f59e0b;
             margin-bottom: 10px;
             font-size: 16px;
-        }
-        
-        .timer-display {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .timer-unit {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .timer-value {
-            background-color: #f59e0b;
-            color: white;
-            font-weight: 700;
-            font-size: 24px;
-            width: 50px;
-            height: 50px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .timer-unit .timer-label {
-            font-size: 12px;
-            margin-top: 5px;
-            color: #64748b;
-            font-weight: 600;
-        }
-        
-        /* Pricing Section Styles */
-        .pricing-section {
-            background-color: #f8fafc;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            border: 1px solid #e2e8f0;
         }
         
         .price-display {
@@ -328,16 +285,11 @@
             color: var(--dark);
         }
         
-        .price-period {
-            font-size: 16px;
-            color: var(--gray);
-            margin-left: 5px;
-        }
-        
         .price-original {
             font-size: 14px;
             color: var(--gray);
             margin-bottom: 15px;
+            text-decoration: line-through;
         }
         
         .price-features {
@@ -960,7 +912,9 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>AI-Powered Business Consultancy<br>Tailored to Your Needs</h1>
-                    <p class="subtitle">Our AI technology creates custom business strategies and implementation plans instantly. No consultants, no waiting, no excessive fees. Get exactly what you need in minutes, not weeks.</p>
+                    <p class="subtitle">Our AI technology creates custom business strategies and implementation plans instantly. No consultants, no waiting, no excessive fees. Get exactly what you need in minutes, not weeks.  
+                        <a href="https://instantlegaldotai.onrender.com/" target="_blank">Try Instant Legal AI</a> for fast, AI-generated legal documents tailored to your business needs!
+                    </p>
                     
                     <div class="features">
                         <div class="feature">
@@ -985,7 +939,7 @@
                                     <path d="M5 13L9 17L19 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <div>Save $5,000+ Compared to Traditional Consulting</div>
+                            <div>Special Introductory Price of $19.99</div>
                         </div>
                         <div class="feature">
                             <div class="feature-icon">
@@ -1001,22 +955,14 @@
                 <div class="hero-form">
                     <h2 class="form-title">Generate Your Custom AI Consultancy Report</h2>
                     
-                    <div class="special-offer-timer">
-                        <div class="timer-label">24-HOUR SPECIAL PRICE ENDS IN:</div>
-                        <div class="timer-display">
-                            <div class="timer-unit">
-                                <div class="timer-value" id="hours">07</div>
-                                <div class="timer-label">HOURS</div>
-                            </div>
-                            <div class="timer-unit">
-                                <div class="timer-value" id="minutes">23</div>
-                                <div class="timer-label">MINS</div>
-                            </div>
-                            <div class="timer-unit">
-                                <div class="timer-value" id="seconds">45</div>
-                                <div class="timer-label">SECS</div>
-                            </div>
+                    <div class="special-offer">
+                        <div class="offer-label">SPECIAL INTRODUCTORY OFFER</div>
+                        <div class="price-display">
+                            <span class="price-amount">$19.99</span>
+                            <span class="price-period">per report</span>
                         </div>
+                        <div class="price-original">Regular price: $49.99</div>
+                        <div class="limited-offer">Limited time only - Price increases soon!</div>
                     </div>
                     
                     <form id="document-form">
@@ -1100,41 +1046,6 @@
                             <textarea id="additional-instructions" name="additional_instructions" rows="4" placeholder="Describe your current challenges, goals, and any specific AI technologies you're interested in..."></textarea>
                         </div>
                         
-                        <div class="pricing-section">
-                            <div class="price-display">
-                                <span class="price-amount">$99</span>
-                                <span class="price-period">per report</span>
-                            </div>
-                            <div class="price-original">Regular price: $199 - Save 50% today!</div>
-                            <div class="price-features">
-                                <div class="price-feature">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 13L9 17L19 7" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    Comprehensive AI strategy analysis
-                                </div>
-                                <div class="price-feature">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 13L9 17L19 7" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    Implementation roadmap
-                                </div>
-                                <div class="price-feature">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 13L9 17L19 7" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    ROI projections
-                                </div>
-                                <div class="price-feature">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 13L9 17L19 7" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    Industry-specific recommendations
-                                </div>
-                            </div>
-                            <div class="limited-offer">Only 14 reports remaining at this price today!</div>
-                        </div>
-                        
                         <div class="success-message" style="display: none;">Your report has been generated successfully!</div>
                         <div class="error-message" style="display: none;">There was an error processing your request.</div>
                         
@@ -1197,8 +1108,8 @@
                             <path d="M12 4V20M20 12H4" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Save Thousands in Consulting Fees</h3>
-                    <p>Our AI-generated reports cost a fraction of what consultants charge. Get the same quality without the hefty price tag.</p>
+                    <h3>Affordable Professional Analysis</h3>
+                    <p>Get high-quality AI strategy reports at a fraction of traditional consulting costs. Professional insights without the premium price tag.</p>
                 </div>
                 
                 <div class="advantage-card">
@@ -1374,7 +1285,7 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p class="quote">"I needed an AI strategy for our board meeting the next day. InstantAI Consultancy delivered a perfectly customized report in minutes. Saved me at least $5,000 in consulting fees and the quality was exceptional!"</p>
+                    <p class="quote">"I needed an AI strategy for our board meeting. InstantAI Consultancy delivered a perfectly customized report for just $19.99. The quality was exceptional for the price!"</p>
                     <div class="testimonial-author">
                         <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80');"></div>
                         <div class="author-info">
@@ -1424,7 +1335,7 @@
                         <div class="faq-toggle">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Our reports are generated using the latest AI models trained on business strategy best practices and industry data. While they don't replace human expertise for complex situations, they provide 90% of the value at 10% of the cost of traditional consulting.</p>
+                        <p>Our reports are generated using the latest AI models trained on business strategy best practices and industry data. While they don't replace human expertise for complex situations, they provide 90% of the value at a fraction of the cost of traditional consulting.</p>
                     </div>
                 </div>
                 
@@ -1587,41 +1498,6 @@
                     }
                 });
             });
-
-            // Countdown timer
-            function updateCountdown() {
-                const hoursElement = document.getElementById('hours');
-                const minutesElement = document.getElementById('minutes');
-                const secondsElement = document.getElementById('seconds');
-                
-                let hours = parseInt(hoursElement.textContent);
-                let minutes = parseInt(minutesElement.textContent);
-                let seconds = parseInt(secondsElement.textContent);
-                
-                seconds--;
-                
-                if (seconds < 0) {
-                    seconds = 59;
-                    minutes--;
-                    
-                    if (minutes < 0) {
-                        minutes = 59;
-                        hours--;
-                        
-                        if (hours < 0) {
-                            hours = 23;
-                            minutes = 59;
-                            seconds = 59;
-                        }
-                    }
-                }
-                
-                hoursElement.textContent = hours.toString().padStart(2, '0');
-                minutesElement.textContent = minutes.toString().padStart(2, '0');
-                secondsElement.textContent = seconds.toString().padStart(2, '0');
-            }
-            
-            setInterval(updateCountdown, 1000);
         });
     </script>
     
